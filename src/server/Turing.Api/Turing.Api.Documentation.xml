@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Turing.Api</name>
+    </assembly>
+    <members>
+        <member name="M:Turing.Api.Controllers.UserController.GetCurrentUser">
+            <summary>
+            Returns the current logged in user.
+            </summary>
+            <returns>The current logged in user.</returns>
+            <response code="200">Returns the currently logged in user.</response>
+            <response code="404">No user was found (this would mean that something is wrong with the claims).</response>
+        </member>
+        <member name="M:Turing.Api.Controllers.UsersController.Login(Turing.Api.Requests.LoginUserRequest)">
+            <summary>
+            Login.
+            </summary>
+            <param name="request">The credentials.</param>
+            <returns>A JWT token.</returns>
+            <response code="200">If the credentials have a match.</response>
+            <response code="400">If the credentials don't match/don't meet the requirements.</response>
+        </member>
+        <member name="M:Turing.Api.Controllers.UsersController.Register(Turing.Api.Requests.RegisterUserRequest)">
+            <summary>
+            Register.
+            </summary>
+            <param name="request">The user model.</param>
+            <returns>A user model.</returns>
+            <response code="201">A user was created.</response>
+            <response code="400">Invalid input.</response>
+        </member>
+    </members>
+</doc>

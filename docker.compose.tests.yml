@@ -1,0 +1,31 @@
+version: '3.4'
+
+services:
+  turing.sql:
+    image: postgres:11.1
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+  turing.api:
+    image: turingapi
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+    build:
+      context: .
+      dockerfile: src/server/Turing.Api/Dockerfile
+    depends_on:
+      - turing.sql
+    links:
+      - turing.sql:db
+  turing.testrunner:
+    image: turingtestrunner
+    environment:
+      APIURL: api/api
+    build:
+      context: ./tests/Postman
+      dockerfile: Dockerfile
+    depends_on:
+      - turing.api
+    links:
+      - turing.api:api
