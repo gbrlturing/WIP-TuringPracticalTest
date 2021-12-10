@@ -18,6 +18,10 @@ This application was created for Turing candidates to test their coding skills. 
 * A user cannot unfollow user that he doesn't follow already.
 * A user can view others profiles.
 
+### Solution
+* Write your solution in `ProfilesService.cs` file.
+* Create a controller `ProfilesController.cs` with the required APIs.
+
 # Existing Features
 
 The following features already provided in this application:
