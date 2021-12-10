@@ -2,6 +2,22 @@
 
 This application was created for Turing candidates to test their coding skills. This codebase demonstrates a fully fledged backend application built with **ASP.NET Core** . It includes CRUD operations, authentication, routing, pagination, and more.
 
+# Follow Users Exercise
+### Description
+* As a Turing User, I would like to be able to follow/unfollow other users and view their profiles.
+
+### Requirements
+* Add an API to follow a user.
+* Add an API to unfollow a user.
+* Add an API to get a user profile.
+
+### Acceptance criteria
+* A user cannot follow/unfollow himself.
+* A user cannot follow an already follower.
+* A user should be able to unfollow a follower.
+* A user cannot unfollow user that he doesn't follow already.
+* A user can view others profiles.
+
 # Existing Features
 
 The following features already provided in this application:
@@ -82,10 +98,3 @@ public async Task Login_ShouldReturnException_WhenCredentialsAreInvalid(Credenti
 3. Execute `dotnet build`
 4. Execute `dotnet ef database update`
 5. Execute `dotnet run`
-
-# Exercises
-1. Follow other users
-2. CRUD Articles
-3. CR*D Comments on articles (no updating required)
-4. GET and display paginated lists of articles
-5. Favorite articles
