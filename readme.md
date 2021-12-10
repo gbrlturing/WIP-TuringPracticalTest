@@ -2,6 +2,14 @@
 
 This application was created for Turing candidates to test their coding skills. This codebase demonstrates a fully fledged backend application built with **ASP.NET Core** . It includes CRUD operations, authentication, routing, pagination, and more.
 
+# Exercises
+1. Follow other users
+2. CRUD Articles
+3. CR*D Comments on articles (no updating required)
+4. GET and display paginated lists of articles
+5. Favorite articles
+
+
 # Existing Features
 
 The following features already provided in this application:
@@ -82,10 +90,3 @@ public async Task Login_ShouldReturnException_WhenCredentialsAreInvalid(Credenti
 3. Execute `dotnet build`
 4. Execute `dotnet ef database update`
 5. Execute `dotnet run`
-
-# Exercises
-1. Follow other users
-2. CRUD Articles
-3. CR*D Comments on articles (no updating required)
-4. GET and display paginated lists of articles
-5. Favorite articles
