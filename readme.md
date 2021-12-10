@@ -6,9 +6,9 @@ This application was created for Turing candidates to test their coding skills. 
 
 The following features already provided in this application:
 - Authenticate users via JWT
-- Login
+- Log-in
 - Registration 
-- Get a User
+- Get logged-in user
 
 # Existing DB Models
 This application includes migrations to create DB models for you. Such as:
@@ -29,13 +29,6 @@ This application has been made using the [Dev Adventures .NET Core template](htt
 
 ![swagger-ui](./img/swagger-ui.JPG)
 
-
-- [x] Thin Controllers
-- [x] AutoMapper
-- [x] EntityFramework Core with Postgres and ASP.NET Identity
-- [x] JWT authentication/authorization
-- [x] File logging with Serilog
-- [x] Stylecop
 - [x] Neat folder structure
 ```
 ├───src
@@ -49,48 +42,12 @@ This application has been made using the [Dev Adventures .NET Core template](htt
 └───tests
     └───Turing.Business.Tests
 ```
-
-- [x] Global Model Errors Handler
-
-```json
-{
-  "messages": [
-    "The Email field is not a valid email.",
-    "The LastName field is required.",
-    "The FirstName field is required."
-  ]
-}
-```
-
-- [x] Global Environment-Dependent Exception Handler
-
-```json
-// Development
-{
-    "ClassName": "System.Exception",
-    "Message": null,
-    "Data": null,
-    "InnerException": null,
-    "HelpURL": null,
-    "StackTraceString": "...",
-    "RemoteStackTraceString": null,
-    "RemoteStackIndex": 0,
-    "ExceptionMethod": null,
-    "HResult": -2146233088,
-    "Source": "Turing.Api",
-    "WatsonBuckets": null
-}
-
-// Production
-{
-  "messages": [
-    "An unexpected internal server error has occurred."
-  ]
-}
-```
-
-- [x] Neatly organized solution structure <br>
-![solution-structure](./img/solution-structure.JPG)
+- [x] Thin Controllers
+- [x] AutoMapper
+- [x] EntityFramework Core with Postgres and ASP.NET Identity
+- [x] JWT authentication/authorization
+- [x] File logging with Serilog
+- [x] Stylecop
 
 ### Test Suite
 - [x] xUnit
@@ -125,3 +82,10 @@ public async Task Login_ShouldReturnException_WhenCredentialsAreInvalid(Credenti
 3. Execute `dotnet build`
 4. Execute `dotnet ef database update`
 5. Execute `dotnet run`
+
+# Exercises
+1. CRUD Articles
+2. CR*D Comments on articles (no updating required)
+3. GET and display paginated lists of articles
+4. Favorite articles
+5. Follow other users
