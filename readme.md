@@ -89,18 +89,3 @@ public async Task Login_ShouldReturnException_WhenCredentialsAreInvalid(Credenti
 3. CR*D Comments on articles (no updating required)
 4. GET and display paginated lists of articles
 5. Favorite articles
-
-## **Follow Users Exercise**
-### Description
-* As a Turing User, I would like to be able to follow/unfollow other users and view their profiles.
-
-### Acceptance criteria
-* A user cannot follow/unfollow himself.
-* A user cannot follow an already follower.
-* A user should be able to unfollow a follower.
-* A user cannot unfollow user that doesn't follow already.
-* A user can view a follower's profile.
-
-### Controllers Specifications
-* Please use the following controllers/services. Make sure to **NOT** change the methods and the classes names:
-    - TBD
