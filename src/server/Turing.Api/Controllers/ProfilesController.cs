@@ -20,7 +20,7 @@ namespace Turing.Api.Controllers
         }
 
         /// <summary>
-        /// Retreives a user's profile by username.
+        /// Retrieves a user's profile by username.
         /// </summary>
         /// <param name="username">The username to look for.</param>
         /// <returns>A user profile or not found.</returns>
