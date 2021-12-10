@@ -38,6 +38,7 @@ namespace Turing.Api
             services.AddJwtIdentity(Configuration.GetSection(nameof(JwtConfiguration)));
 
             services.AddTransient<IUsersService, UsersService>();
+            services.AddTransient<IProfilesService, ProfilesService>();
             services.AddTransient<IJwtFactory, JwtFactory>();
 
             services.AddMvc(options =>

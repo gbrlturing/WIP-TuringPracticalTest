@@ -37,6 +37,8 @@ namespace Turing.Business.Services
         protected virtual async Task<Option<User>> GetUser(Func<User, bool> predicate) =>
             (await DbContext
                 .Users
+                .Include(u => u.Following)
+                .Include(u => u.Followers)
                 .AsNoTracking()
                 .FirstOrDefaultAsync(u => predicate(u))).SomeNotNull();
     }

@@ -15,5 +15,9 @@ namespace Turing.Data.Entities
         public string LastName { get; set; }
 
         public DateTime RegistrationDate { get; set; }
+
+        public List<FollowedUser> Following { get; set; } = new List<FollowedUser>();
+
+        public List<FollowedUser> Followers { get; set; } = new List<FollowedUser>();
     }
 }
