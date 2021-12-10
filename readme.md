@@ -6,9 +6,9 @@ This application was created for Turing candidates to test their coding skills. 
 
 The following features already provided in this application:
 - Authenticate users via JWT
-- Login
+- Log-in
 - Registration 
-- Get a User
+- Get logged-in user
 
 # Existing DB Models
 This application includes migrations to create DB models for you. Such as:
@@ -29,13 +29,6 @@ This application has been made using the [Dev Adventures .NET Core template](htt
 
 ![swagger-ui](./img/swagger-ui.JPG)
 
-
-- [x] Thin Controllers
-- [x] AutoMapper
-- [x] EntityFramework Core with Postgres and ASP.NET Identity
-- [x] JWT authentication/authorization
-- [x] File logging with Serilog
-- [x] Stylecop
 - [x] Neat folder structure
 ```
 ├───src
@@ -49,48 +42,12 @@ This application has been made using the [Dev Adventures .NET Core template](htt
 └───tests
     └───Turing.Business.Tests
 ```
-
-- [x] Global Model Errors Handler
-
-```json
-{
-  "messages": [
-    "The Email field is not a valid email.",
-    "The LastName field is required.",
-    "The FirstName field is required."
-  ]
-}
-```
-
-- [x] Global Environment-Dependent Exception Handler
-
-```json
-// Development
-{
-    "ClassName": "System.Exception",
-    "Message": null,
-    "Data": null,
-    "InnerException": null,
-    "HelpURL": null,
-    "StackTraceString": "...",
-    "RemoteStackTraceString": null,
-    "RemoteStackIndex": 0,
-    "ExceptionMethod": null,
-    "HResult": -2146233088,
-    "Source": "Turing.Api",
-    "WatsonBuckets": null
-}
-
-// Production
-{
-  "messages": [
-    "An unexpected internal server error has occurred."
-  ]
-}
-```
-
-- [x] Neatly organized solution structure <br>
-![solution-structure](./img/solution-structure.JPG)
+- [x] Thin Controllers
+- [x] AutoMapper
+- [x] EntityFramework Core with Postgres and ASP.NET Identity
+- [x] JWT authentication/authorization
+- [x] File logging with Serilog
+- [x] Stylecop
 
 ### Test Suite
 - [x] xUnit
@@ -125,3 +82,25 @@ public async Task Login_ShouldReturnException_WhenCredentialsAreInvalid(Credenti
 3. Execute `dotnet build`
 4. Execute `dotnet ef database update`
 5. Execute `dotnet run`
+
+# Exercises
+1. Follow other users
+2. CRUD Articles
+3. CR*D Comments on articles (no updating required)
+4. GET and display paginated lists of articles
+5. Favorite articles
+
+## **Follow Users Exercise**
+### Description
+* As a Turing User, I would like to be able to follow/unfollow other users and view their profiles.
+
+### Acceptance criteria
+* A user cannot follow/unfollow himself.
+* A user cannot follow an already follower.
+* A user should be able to unfollow a follower.
+* A user cannot unfollow user that doesn't follow already.
+* A user can view a follower's profile.
+
+### Controllers Specifications
+* Please use the following controllers/services. Make sure to **NOT** change the methods and the classes names:
+    - TBD
