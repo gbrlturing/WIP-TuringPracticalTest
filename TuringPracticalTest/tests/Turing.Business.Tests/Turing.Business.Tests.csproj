@@ -22,7 +22,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\server\Turing.Business\Turing.Business.csproj" />
+    <ProjectReference Include="..\..\src\Turing.Business\Turing.Business.csproj" />
   </ItemGroup>
 
 </Project>
