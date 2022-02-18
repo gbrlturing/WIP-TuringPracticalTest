@@ -47,7 +47,7 @@ This application has been made using the [Dev Adventures .NET Core template](htt
 
 - [x] Swagger UI + Fully Documented Controllers
 
-![swagger-ui](./img/swagger-ui.JPG)
+![swagger-ui](./TuringPracticalTest/img/swagger-ui.JPG)
 
 - [x] Neat folder structure
 ```

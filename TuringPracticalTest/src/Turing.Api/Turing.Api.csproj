@@ -2,13 +2,13 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.0</TargetFramework>
-    <CodeAnalysisRuleSet>..\..\configuration\analyzers.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSet>..\configuration\analyzers.ruleset</CodeAnalysisRuleSet>
     <DocumentationFile>.\Turing.Api.Documentation.xml</DocumentationFile>
     <NoWarn>1701;1702;1705;1591</NoWarn>
   </PropertyGroup>
 
   <ItemGroup>
-    <AdditionalFiles Include="..\..\configuration\stylecop.json" Link="stylecop.json" />
+    <AdditionalFiles Include="..\configuration\stylecop.json" Link="stylecop.json" />
   </ItemGroup>
 
   <ItemGroup>

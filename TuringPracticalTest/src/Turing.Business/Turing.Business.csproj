@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <CodeAnalysisRuleSet>..\..\configuration\analyzers.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSet>..\configuration\analyzers.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
@@ -14,7 +14,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <AdditionalFiles Include="..\..\configuration\stylecop.json" Link="stylecop.json" />
+    <AdditionalFiles Include="..\configuration\stylecop.json" Link="stylecop.json" />
   </ItemGroup>
 
   <ItemGroup>
