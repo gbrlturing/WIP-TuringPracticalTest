@@ -9,4 +9,5 @@ RUN dotnet build "./TuringPracticalTest/tests/Turing.Business.Tests/Turing.Busin
 FROM build AS testrunner
 WORKDIR "./TuringPracticalTest/tests/Turing.Business.Tests/"
 
-CMD ["dotnet", "test"]
+#CMD ["dotnet", "test"]
+ENTRYPOINT ["dotnet", "test"]
